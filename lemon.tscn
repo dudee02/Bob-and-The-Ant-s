@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bf1nqgwoqm5xj"]
+
+[ext_resource type="Texture2D" uid="uid://cu8oqry87xqfy" path="res://pixil-coin-1.png" id="2_0f6ds"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_yus4s"]
+radius = 22.0
+height = 64.0
+
+[node name="lemon" type="Area2D" unique_id=1545616171 groups=["lemon"]]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1769816241]
+position = Vector2(-1, 144)
+texture = ExtResource("2_0f6ds")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1002715293]
+position = Vector2(1, 0)
+shape = SubResource("CapsuleShape2D_yus4s")
